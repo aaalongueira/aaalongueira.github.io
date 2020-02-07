@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ------------------------------------------------------ HEAD ----------------------------------------------------- -->
+  	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	    <title>About - Ángel Longueira</title>
+
+	    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="/static/css/mine.css" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:700,400" rel="stylesheet" type="text/css">
+	    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+	    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	    <link rel="manifest" href="/favicon/site.webmanifest">
+	    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#df013a">
+	    <link rel="shortcut icon" href="/favicon/favicon.ico">
+
+<!-- 		<link rel="stylesheet" href="dc.css">
+		<link rel="stylesheet" href="bootstrap.min.css"> -->
+
+	    <meta name="msapplication-TileColor" content="#da532c">
+	    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+	    <meta name="theme-color" content="#ffffff">
+
+		<style>
+			.content {
+			    max-width: 1000px;
+			    margin: auto;
+			}
+	        #monthly-volume-chart g.y {
+	            display: none;
+	        }
+	        #logo {
+	            margin-right: 2em;
+	            margin-top: 2em;
+
+	        }
+	        #stationName {
+	        	margin: 1rem;
+	        	padding: 1rem;
+	        	text-align: center;
+	        	justify-content: center;
+	        	align-items: center;
+	        }
+	        #day-of-week-chart {
+	        	margin: 1rem;
+	        	padding: 1rem;
+	        	text-align: center;
+	        	justify-content: center;
+	        	align-items: center;
+	        }    
+	        #hours-chart {
+	        	margin: 1rem;
+	        	padding: 1rem;
+	        	text-align: center;
+	        	justify-content: center;
+	        	align-items: center;
+	        }
+	    </style>
+	  
+		<script type="text/javascript">
+		    var shiftWindow = function() { scrollBy(0, -70) };
+		    if (location.hash) shiftWindow();
+		    window.addEventListener("hashchange", shiftWindow);
+		</script>      
+  	</head>
+<!-- ------------------------------------------------ END OF THE HEAD ------------------------------------------------ -->
+
+
+
+<!-- ------------------------------------------------------ BODY ----------------------------------------------------- -->
+  	<body style="padding-top: 70px">
+      	<nav class="navbar navbar-inverse navbar-fixed-top">   
+        	<div class="container">
+           	 	<div class="navbar-header">
+                	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                     	<span class="icon-bar"></span>
+                     	<span class="icon-bar"></span>
+                     	<span class="icon-bar"></span> 
+                	</button>    
+                 	<a class="navbar-brand" href="#" data-toggle="collapse" data-target=".navbar-collapse.in">
+                     	<span class="fa fa-bookmark" aria-hidden="true" style="color:#DF013A"></span>
+                 	</a>
+            	</div>
+            	<div class="collapse navbar-collapse">
+                	<ul class="nav navbar-nav">
+	                    <li><a href="#research" data-toggle="collapse" data-target=".navbar-collapse.in">Research Interests</a></li>
+	                    <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
+	                    <li><a href="#projects" data-toggle="collapse" data-target=".navbar-collapse.in">Personal Projects</a></li>
+	                    <li><a href="#publications" data-toggle="collapse" data-target=".navbar-collapse.in">Publications</a></li>
+	                    <li><a href="javascript: document.body.scrollIntoView(false);" data-toggle="collapse" data-target=".navbar-collapse.in">Theses</a></li>
+						<li><a href="polutionVisualisation/polution.html" data-toggle="collapse" data-target=".navbar-collapse.in">.</a></li>
+                	</ul>
+            	</div>
+         	</div>
+     	</nav>      
+      
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+				<div class="row">
+    				<div class="col-lg-12 col-md-12 col-md-12 col-xs-12">
+        				<h1><strong>Data Visualization Project: Air Quality in Gijón</strong></h1>
+    				</div>
+				</div>
+
+				<div class="row">
+    				<div class="col-lg-4 col-lg-push-8 col-md-4 col-md-push-8 col-sm-3 col-sm-push-9 col-xs-12 col-xs-push-0">
+        				<img class="img-thumbnail me" src="/images/xixon3.logo.png" width="200" alt="">
+    				</div>
+
+    				<div class="col-lg-8 col-lg-pull-4 col-md-8 col-md-pull-4 col-sm-9 col-sm-pull-3 col-xs-12 col-xs-offset-0">
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+<!-- 												INTRODUCTION 													   -->
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+        				<div class="section" id="introduction">
+							<h2>Introduction</h2>
+							<p align = "justify">
+								La ciudad de <b>Gijón</b> presentó en varias ocasiones el <b>nivel más alto de contaminación</b> por partículas de Europa durante el año 2017. En esos momentos, presentaba el doble de partículas en suspensión que Madrid, cuando la capital estaba con alertas con tráfico reducido.
+							</p>
+							<p align = "justify">
+								La mayor parte de estos problemas se deben a la larga tradición industrial asturiana y a la fuerte dependencia económica que tiene sobre el sector. Además, durante ese mismo año, se produjeron varios casos de <b>escapes accidentales</b> <a href="http://www.elcomercio.es/aviles/nube-negra-aviles-20180117180800-nt.html">[1]</a>, <a href="http://www.lne.es/aviles/2017/04/26/estacion-medioambiental-llaranes-registro-ayer/2094793.html">[2]</a>, <a href="http://www.elcomercio.es/gijon/averia-instalaciones-arcelor-20171122000608-ntvo.html">[3]</a>, <a href="http://www.lne.es/gijon/2018/04/19/principado-alerta-riesgo-alta-contaminacion/2272387.html">[4]</a>. Por ello, usando los <a href="https://transparencia.gijon.es/search/risp_dataset/page/1808-catalogo-de-datos?utf8=%E2%9C%93&search=calidad+del+aire&search_sector=246&search_format=&commit=Buscar&authenticity_token=DDySUww1zkts9eC88yzk6t%2Bos%2BWdV87ADQgZxinnEJ0%3D">Datos Abiertos</a> del Ayuntamiento de Gijón, se pretende crear una visualización sencilla que lea los datos desde un archivo CSV.
+							</p>
+						</div>
+
+
+
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+<!-- 												METHODOLOGY 													   -->
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+						<div class="anchor section" id="methodology">
+							<span id="methodology"></span><h2>Methodology</h2>
+							<p align = "justify">
+								Para realizar todas las visualizaciones se usó la librería <a href="https://dc-js.github.io/dc.js/">dc.js</a> de javascript, cuyo funcionamiento se basa en <a href="http://crossfilter.github.io/crossfilter/">Crossfilter</a> para permitir una exploración altamente eficiente en capas de datos multidimensionales, y en <a href="https://d3js.org/">D3</a> para renderizar los gráficos en formatos SVG. Todos los gráficos creados usando dc.js están impulsadas por datos y son reactivas, por lo que proporcionan realimentación instantánea a la interacción de usuario. por todo ello, dc.js es una librería muy potente de javacript para la visualizacion y análisis de datos en navegadores o dispositivos móviles.
+							</p>
+						</div>
+
+
+
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+<!-- 												MAIN GRAPHS 													   -->
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+						<div class="anchor section" id="graphs">
+							<span id="mainGraphs"></span><h2>Main Graphs</h2>
+							<p align = "justify">
+								Esta visualización consta de dos elementos principales:
+								<ul>
+									<li type="square"><b><u>Gráficas de selección</u>: </b>su función principal es poder filtrar los datos. Son las gráficas de datos por estación, datos por día de la semana, datos por horas del día.
+									</li>
+									<li type="square"><b><u>Gráficas de datos</u>: </b>en ellas se muestran los datos una vez filtrados. Son las gráficas de concentración de contaminantes, temperatura, humedad relativa.
+									</li>
+								</ul>
+							</p>
+						</div>
+
+						<div class="row">
+						<!-- Creamos los contenedores para los gráficos -->
+							<div id="stationName">
+								<!-- Título del gráfico -->
+								<strong>Datos por Estación</strong>
+								<!-- Creamos un botón de RESET que aparezca sólo cuando se hayan aplicado filtros -->
+						        <a class="reset" href="javascript:stationNameChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+					        	<div class="clearfix"></div>
+							</div>
+
+							<div id="day-of-week-chart">
+								<strong>Datos por Días de la Semana</strong>
+								<a class="reset" href="javascript:dayOfWeekChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+
+					        	<div class="clearfix"></div>
+							</div>
+
+							<div id="hours-chart">
+						        <strong>Datos por Horas del Día</strong>
+						        <!-- <span class="reset" style="display: none;">range: <span class="filter"></span></span> -->
+						        <a class="reset" href="javascript:hoursChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+
+						        <div class="clearfix"></div>
+						    </div>
+						</div>
+
+						<div class="row">
+							<div id="monthly-contaminantes-chart">
+								<strong> Concentración de Contaminantes (&mu;g / m<sup>3</sup>) </strong>
+
+								<span class="reset" style="display: none;">range: <span class="filter"></span></span>
+						        <a class="reset" href="javascript:contaminantesChart.filterAll();contaminantesVolumeChart.filterAll();dc.redrawAll();"
+						           style="display: none;">reset</a>
+					        	<div class="clearfix"></div>
+
+							</div>
+						</div>
+
+						<div class="row">
+							<div id="contaminantes-volume-chart">
+							</div>
+							<p class="muted pull-right" style="margin-right: 15px;">selecciona un rango para hacer zoom</p>
+						</div>
+
+						<div class="row">
+							<div id="monthly-TMP-chart">
+								<strong> Temperatura (ºC) </strong>
+
+								<span class="reset" style="display: none;">range: <span class="filter"></span></span>
+						        <a class="reset" href="javascript:TMPChart.filterAll();TMPVolumeChart.filterAll();dc.redrawAll();"
+						           style="display: none;">reset</a>
+					        	<div class="clearfix"></div>
+
+							</div>			
+						</div>
+
+						<div class="row">
+							<div id="TMP-volume-chart">
+							</div>
+							<p class="muted pull-right" style="margin-right: 15px;">selecciona un rango para hacer zoom</p>
+						</div>
+
+						<div class="row">
+							<div id="monthly-HR-chart">
+								<strong> Humedad Relativa (%) </strong>
+
+								<span class="reset" style="display: none;">range: <span class="filter"></span></span>
+						        <a class="reset" href="javascript:HRChart.filterAll();HRVolumeChart.filterAll();dc.redrawAll();"
+						           style="display: none;">reset</a>
+					        	<div class="clearfix"></div>
+
+							</div>			
+						</div>
+
+						<div class="row">
+							<div id="HR-volume-chart">
+							</div>
+							<p class="muted pull-right" style="margin-right: 15px;">selecciona un rango para hacer zoom</p>
+						</div>
+
+						<div class = "clearfix"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+							<a href="https://github.com/aaalongueira/visualizacion"><img style="position: absolute; top: 0; right: 0; border: 0;"
+                                                  src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+                                                  alt="Fork me on GitHub"></a>
+				</div>
+			</div>
+		</div>
+		<footer align = "center">
+    		<small>
+    			<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">&copy; Copyright 2018 </a>- Ángel Alfonso Antonio Longueira Romero
+    		</small>
+    	</footer>
+		</div>
+<!-- -------------------------------------- CARGAR LIBRERÍAS Y SCRIPTS ----------------------------------------------- -->
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="/static/js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="https://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+	    <script type="text/javascript" src="https://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
+		<!-- Include D3 library -->
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<!-- Include CrossFilter library -->		
+		<script src="crossfilter.js"></script>
+		<!-- Include the JavaScript file with the visualization -->		
+		<script src="dc.js"></script>
+		<script type="text/javascript" src="colorbrewer.js"></script>
+		<script type="text/javascript" src="stock.js"></script>
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+  	</body>
+</html>
