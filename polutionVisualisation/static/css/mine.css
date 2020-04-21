@@ -92,5 +92,37 @@ table, tr, td {
     border: none;
 }
 
+.content {
+    max-width: 1000px;
+    margin: auto;
+}
+#monthly-volume-chart g.y {
+    display: none;
+}
+#logo {
+    margin-right: 2em;
+    margin-top: 2em;
 
+}
+#stationName {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#day-of-week-chart {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}    
+#hours-chart {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
