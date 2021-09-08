@@ -2,6 +2,32 @@
 <html lang="en">
 <!-- ------------------------------------------------------ HEAD ----------------------------------------------------- -->
   	<head>
+		<style type="text/css">
+			.nav li a {
+				background-color:initial;
+				color:#F00;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				/*background-color:#FFF;*/
+				color:#FFF;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+
+			.nav li:hover > ul {
+				display:block;
+				background-color:#222;
+			}
+
+		</style>
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,18 +65,24 @@
                      	<span class="icon-bar"></span>
                      	<span class="icon-bar"></span> 
                 	</button>    
-                 	<a class="navbar-brand" href="index.html" data-toggle="collapse" data-target=".navbar-collapse.in">
+                 	<a class="navbar-brand" href="/index.html" data-toggle="collapse" data-target=".navbar-collapse.in">
                      	<span class="fa fa-bookmark" aria-hidden="true" style="color:#DF013A"></span>
                  	</a>
             	</div>
             	<div class="collapse navbar-collapse">
                 	<ul class="nav navbar-nav">
-	                    <li><a href="index.html#research" data-toggle="collapse" data-target=".navbar-collapse.in">Research Interests</a></li>
-	                    <li><a href="index.html#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
-	                    <li><a href="index.html#projects" data-toggle="collapse" data-target=".navbar-collapse.in">Personal Projects</a></li>
-	                    <li><a href="index.html#publications" data-toggle="collapse" data-target=".navbar-collapse.in">Publications</a></li>
-	                    <li><a href="index.html#theses" data-toggle="collapse" data-target=".navbar-collapse.in">Theses</a></li>
-	                    <li><a href="index.html#resources" data-toggle="collapse" data-target=".navbar-collapse.in">Resources</a></li>
+	                    <li><a href="/index.html#research" data-toggle="collapse" data-target=".navbar-collapse.in">Research Interests</a></li>
+	                    <li><a href="/index.html#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
+	                    <li><a href="/index.html#projects" data-toggle="collapse" data-target=".navbar-collapse.in">Personal Projects</a></li>
+	                    <li><a href="/index.html#publications" data-toggle="collapse" data-target=".navbar-collapse.in">Publications</a></li>
+	                    <li><a href="/index.html#theses" data-toggle="collapse" data-target=".navbar-collapse.in">Theses</a></li>
+	                    <li><a href="resources.html" data-toggle="collapse" data-target=".navbar-collapse.in">Resources</a></li>
+	                    <li><a data-toggle="collapse" data-target=".navbar-collapse.in">Language</a>
+	                    	<ul style="margin:0px;padding:0px">
+	                    		<li style="list-style: none;margin: 0px;padding: 0px"><a href="/spanish/resources_ES.html">Español</a></li>
+	                    		<li style="list-style: none;margin: 0px;padding: 0px"><a href="/resources.html">English</a></li>
+	                    	</ul>
+	                    </li>
                 	</ul>
             	</div>
          	</div>
@@ -75,7 +107,7 @@
 						<div class="section" id="table-of-contents">
 							<h2>Table of Contents</h2>
 								<p>
-									This is the main table of contents of the file, so you can know beforehand if there is something aligned with your interests. 
+									This is the main table of contents of the file, so you can know beforehand if there is something aligned with your interests:
 								</p>
 								<ol class="simple">
 									<li>Publications Search engines</li>

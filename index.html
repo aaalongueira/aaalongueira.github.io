@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   	<head>
+		<style type="text/css">
+			.nav li a {
+				background-color:initial;
+				color:#F00;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				/*background-color:#FFF;*/
+				color:#FFF;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+
+			.nav li:hover > ul {
+				display:block;
+				background-color:#222;
+			}
+
+		</style>
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	    <title>About - Ángel Longueira</title>
-
+	    <!-- This is the stylesheet -->
 	    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
 	    <link href="/static/css/mine.css" rel="stylesheet">
+	    <!-- This is for the font -->
 	    <link href="https://fonts.googleapis.com/css?family=Roboto:700,400" rel="stylesheet" type="text/css">
+	    <!-- This is for the icons -->
 	    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+	    <!-- Here, we weill include some nice favicons -->
 	    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 	    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 	    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -39,18 +67,24 @@
                      	<span class="icon-bar"></span>
                      	<span class="icon-bar"></span> 
                 	</button>    
-                 	<a class="navbar-brand" href="#" data-toggle="collapse" data-target=".navbar-collapse.in">
+                 	<a class="navbar-brand" href="/index.html" data-toggle="collapse" data-target=".navbar-collapse.in">
                      	<span class="fa fa-bookmark" aria-hidden="true" style="color:#DF013A"></span>
                  	</a>
             	</div>
             	<div class="collapse navbar-collapse">
                 	<ul class="nav navbar-nav">
-	                    <li><a href="#research" data-toggle="collapse" data-target=".navbar-collapse.in">Research Interests</a></li>
-	                    <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
-	                    <li><a href="#projects" data-toggle="collapse" data-target=".navbar-collapse.in">Personal Projects</a></li>
-	                    <li><a href="#publications" data-toggle="collapse" data-target=".navbar-collapse.in">Publications</a></li>
-	                    <li><a href="#theses" data-toggle="collapse" data-target=".navbar-collapse.in">Theses</a></li>
+	                    <li><a href="/index.html#research" data-toggle="collapse" data-target=".navbar-collapse.in">Research Interests</a></li>
+	                    <li><a href="/index.html#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
+	                    <li><a href="/index.html#projects" data-toggle="collapse" data-target=".navbar-collapse.in">Personal Projects</a></li>
+	                    <li><a href="/index.html#publications" data-toggle="collapse" data-target=".navbar-collapse.in">Publications</a></li>
+	                    <li><a href="/index.html#theses" data-toggle="collapse" data-target=".navbar-collapse.in">Theses</a></li>
 	                    <li><a href="resources.html" data-toggle="collapse" data-target=".navbar-collapse.in">Resources</a></li>
+	                    <li><a data-toggle="collapse" data-target=".navbar-collapse.in">Language</a>
+	                    	<ul style="margin:0px;padding:0px">
+	                    		<li style="list-style: none;margin: 0px;padding: 0px"><a href="/spanish/index_ES.html">Español</a></li>
+	                    		<li style="list-style: none;margin: 0px;padding: 0px"><a href="/index.html">English</a></li>
+	                    	</ul>
+	                    </li>
                 	</ul>
             	</div>
          	</div>
@@ -74,24 +108,24 @@
     				<div class="col-lg-8 col-lg-pull-4 col-md-8 col-md-pull-4 col-sm-9 col-sm-pull-3 col-xs-12 col-xs-offset-0">
         				<div class="section" id="bio">
 							<h2>Bio</h2>
-							<p>I am a PhD student from <a class="reference external" href="https://www.mondragon.edu/en/home">Mondragon University</a> in Spain, currently working in the Industrial Cybersecurity Team at <a class="reference external" href="https://www.ikerlan.es/en/">IKERLAN</a> in The Basque Country, Spain.</p>
+							<p>I am a PhD student from <a class="reference external" href="https://www.mondragon.edu/en/home" target="_blank" rel="noopener noreferrer">Mondragon University</a> in Spain, currently working in the Industrial Cybersecurity Team at <a class="reference external" href="https://www.ikerlan.es/en/" target="_blank" rel="noopener noreferrer">IKERLAN</a> in The Basque Country, Spain.</p>
 
-							<p>I hold a Master's degree in Automation Engineering and Industrial Informatics, and a Bachelor's degree in Industrial Electronics and Automation Engineering, both from the <a class="reference external" href="http://www.uniovi.es/en">University of Oviedo</a>.</p>
+							<p>I hold a Master's degree in Automation Engineering and Industrial Informatics, and a Bachelor's degree in Industrial Electronics and Automation Engineering, both from the <a class="reference external" href="http://www.uniovi.es/en" target="_blank" rel="noopener noreferrer">University of Oviedo</a>.</p>
 
 							<div class="line-block">
-								<div class="line"><span class="fa fa-file-text-o fa-1x fa-fw"></span> You can download a copy of my <a class="reference external" href="/files/cv_longueira.pdf">Curriculum vitae</a>.</div>
+								<div class="line"><span class="fa fa-file-text-o fa-1x fa-fw"></span> You can download a copy of my <a class="reference external" href="/files/cv_longueira.pdf" target="_blank" rel="noopener noreferrer">Curriculum vitae</a>.</div>
 							</div>
 						</div>
 							<div class="anchor section" id="research-interests">
 								<span id="research"></span><h2>Research Interests</h2>
 								<p>
-									My research focuses on system security, and more precisely, I am interested in security testing methodologies for Embedded Systems (ES). I would like to measure quantitavely the partial level of security of each asset or component of the ES, and then, compute the overall security value associated to the hole device. The most powerfull means to achieved these goals are security metrics, specially those proposed in the standards, such as the <a class="reference external" href="https://nvd.nist.gov/products/cpe">CPE</a>, <a class="reference external" href="https://cwe.mitre.org/">CWE</a>, <a class="reference external" href="https://cve.mitre.org/">CVE</a>, <a class="reference external" href="https://www.first.org/cvss/">CVSS</a>, or <a class="reference external" href="https://capec.mitre.org/">CAPEC</a>.
+									My research focuses on system security, and more precisely, I am interested in security testing methodologies for Embedded Systems (ES). I would like to measure quantitavely the partial level of security of each asset or component of the ES, and then, compute the overall security value associated to the hole device. The most powerfull means to achieved these goals are security metrics, specially those proposed in the standards, such as the <a class="reference external" href="https://nvd.nist.gov/products/cpe" target="_blank" rel="noopener noreferrer">CPE</a>, <a class="reference external" href="https://cwe.mitre.org/" target="_blank" rel="noopener noreferrer">CWE</a>, <a class="reference external" href="https://cve.mitre.org/" target="_blank" rel="noopener noreferrer">CVE</a>, <a class="reference external" href="https://www.first.org/cvss/" target="_blank" rel="noopener noreferrer">CVSS</a>, or <a class="reference external" href="https://capec.mitre.org/" target="_blank" rel="noopener noreferrer">CAPEC</a>.
 								</p>
 								<p>
-									The most interesting point in my research will be the use of standardised security metrics. Available methodologies do not usually propose metrics to know the level of security reached with all the controls and countermeasures. And when metrics are proposed, they are usually qualitative, or the way to obtain a final value is not clearly explained, nor can be applied to embedded systems. You can take a look to the more than <a class="reference external" href="https://embeddedsecuritymetrics.github.io/">500 security metrics</a> that were reviewed.
+									The most interesting point in my research will be the use of standardised security metrics. Available methodologies do not usually propose metrics to know the level of security reached with all the controls and countermeasures. And when metrics are proposed, they are usually qualitative, or the way to obtain a final value is not clearly explained, nor can be applied to embedded systems. You can take a look to the more than <a class="reference external" href="https://embeddedsecuritymetrics.github.io/" target="_blank" rel="noopener noreferrer">500 security metrics</a> that were reviewed.
 								</p>
 								<p>
-									To overcome this, I am analysing the <a class="reference external" href="https://www.mdpi.com/1424-8220/20/24/7160/htm">ISA/IEC-62443</a> standard to propose possible enhancements, and to integrate metrics in its evaluation process. The ISA/IEC-62443 is a series of standards, technical reports, and related information that define procedures and requirements for implementing electronically secure Industrial Automation and Control Systems (IACS).
+									To overcome this, I am analysing the <a class="reference external" href="https://www.mdpi.com/1424-8220/20/24/7160/htm" target="_blank" rel="noopener noreferrer">ISA/IEC-62443</a> standard to propose possible enhancements, and to integrate metrics in its evaluation process. The ISA/IEC-62443 is a series of standards, technical reports, and related information that define procedures and requirements for implementing electronically secure Industrial Automation and Control Systems (IACS).
 								</p>
 								<p>
 									Because of my background, I usually work on my own projects about electronics. I am passionate about designing and building circuits, PCBs, vacuum tubes and solid state amplifiers and anything of this kind.
@@ -103,8 +137,8 @@
 								<div class="line"><span class="fa fa-envelope-o fa-1x fa-fw"></span>    python -c "print( 'alon%sira%sikerlan.%s' % ( 'gue', '@', 'es' ) ) "</div>
 							</div>
 							<div class="line-block">
-								<div class="line"><span class="fa fa-linkedin fa-1x fa-fw"></span><a class="reference external" href="https://www.linkedin.com/in/AngelLongueiraRomero94">  LinkedIn</a></div>
-								<div class="line"><span class="fa fa-address-card fa-1x fa-fw"></span><a class="reference external" href="https://orcid.org/0000-0001-6085-820X">  ORCID</a></div>
+								<div class="line"><span class="fa fa-linkedin fa-1x fa-fw"></span><a class="reference external" href="https://www.linkedin.com/in/AngelLongueiraRomero94" target="_blank" rel="noopener noreferrer">  LinkedIn</a></div>
+								<div class="line"><span class="fa fa-address-card fa-1x fa-fw"></span><a class="reference external" href="https://orcid.org/0000-0001-6085-820X" target="_blank" rel="noopener noreferrer">  ORCID</a></div>
 								<div class="line"><span class="fa fa-map-marker fa-1x fa-fw"></span>  IKERLAN</div>
 								<div class="line"><span class="fa fa-blank fa-1x fa-fw"></span>                Industrial Cybersecurity Team</div>
 							</div>
@@ -113,11 +147,11 @@
 								<div class="line"><span class="fa fa-blank fa-1x fa-fw"></span>                20500 Arrasate/Mondragón, Spain</div>
 							</div>
 						</div>
-						<div class="section" id="projects-list">						
-							<span id="projects"></span><h2>Personal Projects</h2>
+						<div class="section" id="projects">						
+							<h2>Personal Projects</h2>
 							<p><strong>Electronics</strong></p>
 							<ul class="simple">
-								<li>Nixie tubes clocks.</li>
+								<li><a href="/projects/nixie_EN.html">Nixie tubes</a> clocks.</li>
 								<li>Effects pedals.</li>
 								<li>Arduino projects.</li>
 								<li>Raspberry projects.</li>
@@ -126,19 +160,25 @@
 							<p><strong>3D Printing</strong></p>
 							<ul class="simple">
 								<li>Anet A8 printer.</li>								
-								<li>Designing and modelling with <a class="reference external" href="https://www.autodesk.com/products/fusion-360/overview#banner">Fusion 360</a>.</li>
+								<li>Designing and modelling with <a class="reference external" href="https://www.autodesk.com/products/fusion-360/overview#banner" target="_blank" rel="noopener noreferrer">Fusion 360</a>.</li>
 								<li>
-									<a class="reference external" href="https://ultimaker.com/software/ultimaker-cura">Cura</a> 
-									and <a class="reference external" href="https://www.simplify3d.com/">Simplify 3D</a> for slicing the models.
+									<a class="reference external" href="https://ultimaker.com/software/ultimaker-cura" target="_blank" rel="noopener noreferrer">Cura</a> 
+									and <a class="reference external" href="https://www.simplify3d.com/" target="_blank" rel="noopener noreferrer">Simplify 3D</a> for slicing the models.
 								</li>
 							</ul>
 							<p><strong>Music</strong></p>
 							<ul class="simple">
 								<li>Electric bass player.</li>
 								<li>I also play the guitar and the oboe (yeap, the oboe).</li>
-								<li>Interested in styles like jazz and latin jazz, blues, bossa nova, souls and funk...</li>
+								<li>Interested in styles like jazz and latin jazz, blues, bossa nova, soul and funk...</li>
 								<li>... but in reality, I am really eclectic with my music taste.</li>
- 								<li>You can check <a class="reference external" href="https://www.youtube.com/channel/UCwxJqk18DZ2PTZbJcQQ_w7w/videos?view=0&sort=dd&shelf_id=0">my group of soul</a> in YouTube.</li>
+ 								<li>You can check <a class="reference external" href="https://www.youtube.com/channel/UCwxJqk18DZ2PTZbJcQQ_w7w/videos?view=0&sort=dd&shelf_id=0" target="_blank" rel="noopener noreferrer">my group of soul</a> in YouTube.</li>
+							</ul>
+							<p><strong>Others</strong></p>
+							<ul class="simple">
+								<li><b>Cooking:</b> I really enjoy cooking in my daily life, as it is a way of releasing pressure and relaxing. If you are interested, you can check some of <a class="reference external" href="https://www.youtube.com/channel/UCwxJqk18DZ2PTZbJcQQ_w7w/videos?view=0&sort=dd&shelf_id=0" target="_blank" rel="noopener noreferrer">my favourite recipes</a>.</li>
+								<li><b>CrossFit:</b> Since I discovered sport, it has become an important part of my life.</li>
+								<li><b>Languages learning:</b> I am passionated about leaning new languages and getting to know new cultures and people.</li>
 							</ul>
 						</div>
 						<div class="section" id="id3">						
@@ -172,10 +212,10 @@
 	    						<li>Ana González-Muñiz, Ángel Longueira-Romero<br>    
 							        <strong class="papertitle">Traffic Lights Powered with PV Solar Energy</strong><br>
 							        Workrooms Journal: on Power Electronics, Renewable Energy and Energy Efficiency, July 2015<br>            
-				                    <a class="icons" href="/files/papers/wre_2015.pdf" title="PDF">
+				                    <a class="icons" href="/files/papers/wre_2015.pdf" title="PDF" target="_blank" rel="noopener noreferrer">
 				                       <i class="fa fa-file-pdf-o"></i>
 				                    </a>&nbsp;
-									<a class="icons" href="http://workrooms.dieecs.com/Home/workrooms-journal-3/wre-2015-17" title="Website">
+									<a class="icons" href="http://workrooms.dieecs.com/Home/workrooms-journal-3/wre-2015-17" title="Website" target="_blank" rel="noopener noreferrer">
                         				<i class="fa fa-globe"></i>
                     				</a>&nbsp;
 	       							<a class="icons" data-toggle="collapse" data-target="#bibtex-trafficLights_wre2015" href="javascript:void(0);"><i class="fa fa-quote-right" title="BibTeX"></i></a>
@@ -203,13 +243,13 @@
 								<li>    
 						        	<strong class="papertitle">Designing and Deploying a PKI with HSM and automatic Certificate Renewal for Industrial Embedded Systems (Spanish)</strong>
 						        	<br>Master's thesis, University of Oviedo, February 2019<br>
-						            <a class="icons" href="http://digibuo.uniovi.es/dspace/bitstream/10651/50426/6/TFM%20_AngelAlfonsoLongueiraRomero.pdf" title="PDF">
+						            <a class="icons" href="http://digibuo.uniovi.es/dspace/bitstream/10651/50426/6/TFM%20_AngelAlfonsoLongueiraRomero.pdf" title="PDF" target="_blank" rel="noopener noreferrer">
 						            	<i class="fa fa-file-pdf-o"></i>
 						            </a>&nbsp;
 				                    <a class="icons" href="/files/slides/TFM_PKI.pptx" title="Slides">				                        
 				                        <i class="fa fa-picture-o"></i>
 				                    </a>&nbsp;						            
-									<a class="icons" href="http://digibuo.uniovi.es/dspace/handle/10651/50426" title="Website">
+									<a class="icons" href="http://digibuo.uniovi.es/dspace/handle/10651/50426" title="Website" target="_blank" rel="noopener noreferrer">
                         				<i class="fa fa-globe"></i>
                     				</a>&nbsp;
 	       							<a class="icons" data-toggle="collapse" data-target="#bibtex-PKIdesign_2019" href="javascript:void(0);"><i class="fa fa-quote-right" title="BibTeX"></i></a>
@@ -228,10 +268,10 @@
 								<li>    
 						        	<strong class="papertitle">Design of a Temperature Regulation System for a Stirling Engine Heater (Spanish)</strong>
 						        	<br>Undergraduate thesis, University of Oviedo, July 2017<br>
-						            <a class="icons" href="/files/papers/undergraduate_thesis.pdf" title="PDF">
+						            <a class="icons" href="/files/papers/undergraduate_thesis.pdf" title="PDF" target="_blank" rel="noopener noreferrer">
 						            	<i class="fa fa-file-pdf-o"></i>
 						            </a>&nbsp;
-				                    <a class="icons" href="/files/slides/TFG_Stirling.pptx" title="Slides">				                        
+				                    <a class="icons" href="/files/slides/TFG_Stirling.pptx" title="Slides" target="_blank" rel="noopener noreferrer">				                        
 				                        <i class="fa fa-picture-o"></i>
 				                    </a>&nbsp;							            
 	       							<a class="icons" data-toggle="collapse" data-target="#bibtex-stirlingHeater_2017" href="javascript:void(0);"><i class="fa fa-quote-right" title="BibTeX"></i></a>
